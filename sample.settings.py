@@ -15,13 +15,13 @@ TKT_EXPIRY = 86400  # 1 day
 TKT_PRIVATE_KEY = "/path/to/mod_auth_pubtkt/keys/privkey.pem"
 TKT_PUBLIC_KEY = "/path/to/mod_auth_pubtkt/keys/pubkey.pem"
 # Restrict cookies to only go via HTTPS
-TKT_SSL_ONLY = False
-# Set Client IPs in cookie values
-TKT_CLIENT_IP = False
+TKT_SSL_ONLY = True
+# Set Client IPs in cookie values - see the mod_auth_pubtkt docs for details
+TKT_CLIENT_IP = True
 
 # A LONG and RANDOM string
-SECRET_KEY = "developer key"
-# Print lots of noise (SECURITY-SENSITIVE) to stderr
+SECRET_KEY = "change me"
+# Print lots of noise (including sensitive stuff) to stderr/logs
 DEBUG = True
 
 # Name to put at the top of the pages
