@@ -1,15 +1,12 @@
-= PyPubTkt =
+# Py-PubTkt
 
-A simple Python implementation of the 'login server' for mod_auth_pubtkt
+A simple Python implementation of the 'login server' for [mod_auth_pubtkt](https://neon1.net/mod_auth_pubtkt/)
+which backs onto a Google Apps for Domains account.
 
-* mod_auth_pubtkt: 
-** https://neon1.net/mod_auth_pubtkt/ 
-** https://github.com/manuelkasper/mod_auth_pubtkt
+### Configuring
 
-= Configuring =
+Copy `sample.settings.py` to `settings.py` and edit it
 
-Copy sample.env to .env and edit it
-
-= Running =
+### Running
 
     foreman start
