@@ -33,7 +33,7 @@ which backs onto a Google Apps for Domains account.
                 threads=5 \
                 home=/home/sso/py-pubtkt \
                 python-path=/home/sso/py-pubtkt/venv/lib/python2.7/site-packages
-        WSGIScriptAlias / /home/sso/py-pubtkt/app.py
+        WSGIScriptAlias / /home/sso/py-pubtkt/py-pubtkt.wsgi
         <Directory /home/sso/py-pubtkt>
             WSGIProcessGroup pubtkt
             WSGIApplicationGroup %{GLOBAL}
